@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="prSalarySlip" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="eaab4ec5-3903-4a23-b851-1d635515adbe">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="month" class="java.lang.String"/>
+	<parameter name="empNo" class="java.lang.String"/>
+	<parameter name="empName" class="java.lang.String"/>
+	<parameter name="designation" class="java.lang.String"/>
+	<parameter name="basic" class="java.lang.String"/>
+	<parameter name="allowance" class="java.lang.String"/>
+	<parameter name="cLiving" class="java.lang.String"/>
+	<parameter name="tEarning" class="java.lang.String"/>
+	<parameter name="sAllowance" class="java.lang.String"/>
+	<parameter name="tel" class="java.lang.String"/>
+	<parameter name="lAllowance" class="java.lang.String"/>
+	<parameter name="fuel" class="java.lang.String"/>
+	<parameter name="lan" class="java.lang.String"/>
+	<parameter name="areas" class="java.lang.String"/>
+	<parameter name="tGross" class="java.lang.String"/>
+	<parameter name="stamp" class="java.lang.String"/>
+	<parameter name="union" class="java.lang.String"/>
+	<parameter name="welfare" class="java.lang.String"/>
+	<parameter name="festival" class="java.lang.String"/>
+	<parameter name="agrahara" class="java.lang.String"/>
+	<parameter name="wop" class="java.lang.String"/>
+	<parameter name="tax" class="java.lang.String"/>
+	<parameter name="sClub" class="java.lang.String"/>
+	<parameter name="loan" class="java.lang.String"/>
+	<parameter name="hRent" class="java.lang.String"/>
+	<parameter name="electricity" class="java.lang.String"/>
+	<parameter name="water" class="java.lang.String"/>
+	<parameter name="noPay" class="java.lang.String"/>
+	<parameter name="tDeduction" class="java.lang.String"/>
+	<parameter name="netPay" class="java.lang.String"/>
+	<parameter name="bAccNo" class="java.lang.String"/>
+	<parameter name="bank" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT * FROM salary]]>
+	</queryString>
+	<field name="idSalary" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="month" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="basic" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="allowance" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cLiving" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sAllowance" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tel" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lAlowance" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fuel" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lanR" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="areas" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stamp" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="union" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="welfare" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="festival" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="agrahara" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wop" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tax" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sClub" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="loan" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hRent" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="electricity" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="water" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="noPayDays" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="noPayTotal" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tEarning" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tGross" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tDeduction" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nPay" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idEmployee" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idSUser" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="28" splitType="Stretch">
+			<textField>
+				<reportElement x="13" y="2" width="530" height="20" uuid="d7bc5997-22d5-4b7c-b65f-0cc23d1d4032"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{month}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="65" splitType="Stretch">
+			<staticText>
+				<reportElement x="13" y="3" width="90" height="20" uuid="2d1386a4-ae0a-4bd1-8cb6-73dcc6ff1138"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Employee No      :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="103" y="3" width="125" height="20" uuid="11836f50-53c4-40f7-beb1-bb983638514e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="13" y="23" width="90" height="20" uuid="00e9cefa-b586-4099-ab94-9b05ccf138dc"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Employee Name :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="103" y="23" width="440" height="20" uuid="77ca18e7-f83e-4867-ada7-c6e021bd66dc"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="13" y="43" width="90" height="20" uuid="9face25e-463b-4a84-87b9-177ccc0f9ad4"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Designation         :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="103" y="43" width="440" height="20" uuid="4567cce6-4e49-4821-aa8e-250d1b187832"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{designation}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="2" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="576" splitType="Stretch">
+			<staticText>
+				<reportElement x="13" y="4" width="100" height="20" uuid="4bfd5be6-40b1-468b-8d14-8dc57be326f1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Basic Salary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="26" width="100" height="20" uuid="954f1252-dab6-41bb-a98c-e60c7850d72b"/>
+				<text><![CDATA[Allowance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="48" width="100" height="20" uuid="4ebd7f05-2046-44e7-8aa7-77ce7047de6a"/>
+				<text><![CDATA[Cost of Living]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="92" width="100" height="20" uuid="6715b76a-fe2e-46d5-91f7-b290318df69a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sub Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="70" width="100" height="20" uuid="4c380360-9244-4274-a010-3619685d3956"/>
+				<text><![CDATA[Special Allowance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="114" width="100" height="20" uuid="e50d81cb-0e50-43ed-82d3-5281b5cf514a"/>
+				<text><![CDATA[Telephone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="136" width="100" height="20" uuid="eac461f8-ae92-4ebd-ac09-392ae43d8d56"/>
+				<text><![CDATA[Lec.Allowance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="158" width="100" height="20" uuid="587cf922-6112-4251-9a89-8ff168bf8a30"/>
+				<text><![CDATA[Fuel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="180" width="100" height="20" uuid="18b3e957-4b8d-4b08-b0ca-a279de7f534d"/>
+				<text><![CDATA[LAN/RETAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="202" width="100" height="20" uuid="dca90f39-c0d1-4f48-b787-c1b0c264f6a6"/>
+				<text><![CDATA[Areas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="224" width="100" height="20" uuid="b63c0087-7346-467c-93b9-c308a086a1f5"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Gross]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="246" width="100" height="20" uuid="867c6ace-85ef-4405-8c66-7c815a40fc8d"/>
+				<text><![CDATA[Stamp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="268" width="100" height="20" uuid="396e6e86-fcaf-4c95-af53-84623897a6cd"/>
+				<text><![CDATA[Union]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="290" width="100" height="20" uuid="27549a9e-93b1-49a9-897a-2f7f8bb78ff8"/>
+				<text><![CDATA[Welfare]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="312" width="100" height="20" uuid="c3ea91a9-9182-4587-868f-04d2294ff70e"/>
+				<text><![CDATA[Festival]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="334" width="100" height="20" uuid="d406221a-a3b6-494b-80f9-bdd172ea507a"/>
+				<text><![CDATA[Agrahara]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="356" width="100" height="20" uuid="cad857a0-2db0-444d-bd4e-5a4f9a3a77f0"/>
+				<text><![CDATA[W&OP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="378" width="100" height="20" uuid="115f6d5c-3a77-4a46-81e3-23515e9957b4"/>
+				<text><![CDATA[Tax]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="400" width="100" height="20" uuid="8817311c-a3d1-4598-9dbf-8efd414cd1a3"/>
+				<text><![CDATA[Sports Club]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="422" width="100" height="20" uuid="8b741335-b0e9-4159-982f-007c63dc15d4"/>
+				<text><![CDATA[Loan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="444" width="100" height="20" uuid="67b9ea49-a442-48dc-aeed-b350b552b66f"/>
+				<text><![CDATA[House Rent]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="466" width="100" height="20" uuid="feb32c1d-f36d-47a8-b625-2c63ee2da244"/>
+				<text><![CDATA[Electricity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="488" width="100" height="20" uuid="014ad95a-4b6f-4b30-8aa4-d560670b2098"/>
+				<text><![CDATA[Water]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="510" width="100" height="20" uuid="d455c3e8-a189-49aa-b338-3d3f26fd3633"/>
+				<text><![CDATA[No Pay Deduction]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="532" width="100" height="20" uuid="e4f00f59-9a49-4c56-9cf6-8ea2e32e3b20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Deduction]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="554" width="100" height="20" uuid="69748812-bcc4-4927-ba0f-3bdb0cee30a0"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Net Pay]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="114" y="4" width="100" height="20" uuid="99a5dddb-cac7-4c7c-b632-60f68617e824"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{basic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="26" width="100" height="20" uuid="92a0b3d4-ec31-49ad-a7a0-f093402ad8ac"/>
+				<textFieldExpression><![CDATA[$P{allowance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="48" width="100" height="20" uuid="8fd302f2-93cb-4500-ba56-159f7ea3d21d"/>
+				<textFieldExpression><![CDATA[$P{cLiving}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="92" width="100" height="20" uuid="df7310ef-e604-4e86-bb13-03f15b4dcfb4"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tEarning}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="70" width="100" height="20" uuid="c46feadb-3a62-4e0d-b673-4dbbd45b5762"/>
+				<textFieldExpression><![CDATA[$P{sAllowance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="114" width="100" height="20" uuid="4ee1c65c-f41c-474a-a8c4-7cacdad39a0f"/>
+				<textFieldExpression><![CDATA[$P{tel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="136" width="100" height="20" uuid="e5953bb3-df52-40d2-abdb-0c0142b9f204"/>
+				<textFieldExpression><![CDATA[$P{lAllowance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="158" width="100" height="20" uuid="89afb843-d622-4a64-b80a-a3bc32e8cd90"/>
+				<textFieldExpression><![CDATA[$P{fuel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="180" width="100" height="20" uuid="f319a1e2-9d85-4fcf-bc78-93fc0c7645d7"/>
+				<textFieldExpression><![CDATA[$P{lan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="202" width="100" height="20" uuid="30484c02-e3c5-40d5-912b-109434a7cfd7"/>
+				<textFieldExpression><![CDATA[$P{areas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="224" width="100" height="20" uuid="6fbdcefa-bb30-4b1d-8c32-57cc0e7fb1ae"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tGross}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="246" width="100" height="20" uuid="8bea9067-4c7e-47c7-a522-e24dbbef344f"/>
+				<textFieldExpression><![CDATA[$P{stamp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="268" width="100" height="20" uuid="6fc721cb-f84d-428e-b9e0-b87282cc4e1c"/>
+				<textFieldExpression><![CDATA[$P{union}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="290" width="100" height="20" uuid="d6f54ee8-2d03-43dd-9c64-c67f4ea4a77a"/>
+				<textFieldExpression><![CDATA[$P{welfare}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="312" width="100" height="20" uuid="be5abcee-3ace-4fd2-8b78-695bde487228"/>
+				<textFieldExpression><![CDATA[$P{festival}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="334" width="100" height="20" uuid="baf0a630-0314-43b9-8885-e2781d223fed"/>
+				<textFieldExpression><![CDATA[$P{agrahara}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="356" width="100" height="20" uuid="a2c5d7b2-bab2-489e-a7a3-663e6c6bb2d1"/>
+				<textFieldExpression><![CDATA[$P{wop}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="378" width="100" height="20" uuid="d9dd2f76-2080-43c1-838e-1ed94d42a801"/>
+				<textFieldExpression><![CDATA[$P{tax}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="400" width="100" height="20" uuid="cf026c52-7d02-4b92-af0f-c46cb8d0bf87"/>
+				<textFieldExpression><![CDATA[$P{sClub}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="422" width="100" height="20" uuid="5e7d8f96-57c3-4b38-9d3a-b83da3c929a8"/>
+				<textFieldExpression><![CDATA[$P{loan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="444" width="100" height="20" uuid="14b9cdae-cdbc-4fc0-8e1b-aba53839f142"/>
+				<textFieldExpression><![CDATA[$P{hRent}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="466" width="100" height="20" uuid="461dd7da-a917-41e2-9204-5d2ceb73b157"/>
+				<textFieldExpression><![CDATA[$P{electricity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="488" width="100" height="20" uuid="e2775e6d-cded-4894-9e84-45dde4b27eb9"/>
+				<textFieldExpression><![CDATA[$P{water}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="510" width="100" height="20" uuid="6ac13c11-4bfa-4e02-bfab-d8da9db52d66"/>
+				<textFieldExpression><![CDATA[$P{noPay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="532" width="100" height="20" uuid="179f88a7-8310-402f-8531-4bf326752ce5"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tDeduction}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="554" width="100" height="20" uuid="3f0fa52d-2129-4997-ae7a-0c455bb5eda1"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{netPay}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="48" splitType="Stretch">
+			<textField>
+				<reportElement x="13" y="3" width="215" height="20" uuid="587de914-6815-4d64-970e-1ae91827c536"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bAccNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="13" y="25" width="215" height="20" uuid="89a768cf-d9df-42a1-b4a3-1cfe57a3cca2"/>
+				<textFieldExpression><![CDATA[$P{bank}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement x="13" y="2" width="311" height="36" uuid="4b50b170-48b0-4cb4-acbb-6147d3a73dd1"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[“The above shown basic salary figure is inclusive of Government ‎
+
+approved Budgetary Relief Allowance”]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="22" splitType="Stretch"/>
+	</summary>
+</jasperReport>
